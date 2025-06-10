@@ -115,7 +115,7 @@
     }
     @media (max-width: 600px) {
       .sake-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
       }
       .sake-item img {
         max-height: 180px;
@@ -137,16 +137,14 @@
         <option value="甘口">甘口</option>
         <option value="中口">中口</option>
         <option value="辛口">辛口</option>
+	<option value="利口酒">利口酒</option>
       </select>
     </div>
 
     <div class="sake-grid" id="sakeGrid">
 
       <div class="sake-item" data-taste="甘口">
-        <div class="image-wrapper">
-          <img src="photo/安藝虎.jpg" alt="安藝虎">
-          <div class="crown-badge">👑</div>
-        </div>
+        <img src="photo/安藝虎.jpg" alt="安藝虎">
         <div class="sake-name">安藝虎 純米吟釀 素 發泡生酒330ml</div>
         <div class="sake-price">NT720</div>
         <div class="sake-wine">酒精濃度：14%</div>
