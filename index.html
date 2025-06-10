@@ -145,20 +145,23 @@
 	  position: fixed;
 	  bottom: 24px;
 	  right: 20px;
-	  z-index: 99;
+	  z-index: 999;
+	  background: none;
 	  border: none;
-	  outline: none;
-	  background-color: #a68c6d;
-	  color: white;
+	  padding: 0;
 	  cursor: pointer;
-	  padding: 12px 16px;
-	  border-radius: 50%;
-	  font-size: 18px;
-	  display: none; /* 初始不顯示 */
-	  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	  display: none; /* 初始隱藏 */
 	}
-	#backToTop:hover {
-	  background-color: #8b7155;
+
+	#backToTop img {
+	  width: 48px;
+	  height: 48px;
+	  opacity: 0.85;
+	  transition: transform 0.3s ease, opacity 0.3s;
+	}
+	#backToTop:hover img {
+	  transform: scale(1.1);
+	  opacity: 1;
 	}
 
   </style>
@@ -734,6 +737,9 @@
 	
 
   </script>
-  <button id="backToTop" title="回到頂部">⬆︎</button>
+  <button id="backToTop" title="回到頂部">
+  <img src="photo/backtotop.png" alt="回到頂部" />
+	</button>
+
 </body>
 </html>
